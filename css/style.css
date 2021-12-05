@@ -1,0 +1,87 @@
+/* box sizing */
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* site-wide font styling */
+body {
+    background-color: lavender;
+    font-size: larger;
+    color: midnightblue;
+    font-family: sans-serif;
+}
+
+/* three classes that are altered */
+.sitenav {
+    font-size: larger;
+    background-color: grey;
+}
+
+.fourk {
+    border-radius: 25px;
+    border: 2px solid orange;
+}
+
+.logo {
+    background-image: linear-gradient(to bottom right, pink, green);
+}
+
+/* three IDs that are altered */
+#tube {
+    box-shadow: 10px 10px 5px grey;
+    border: 10px solid transparent;
+    border-image: url(../images/circle.png) 20% round;
+}
+
+#mantra {
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+#address {
+    transform: translate(50px, 0px);
+}
+
+/* Text Shadow */
+h1 {
+    text-shadow: 2px 2px orange;
+}
+
+/* Hyperlink text colors */
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: yellow;
+}
+
+/* List marker */
+ul {
+    list-style-type: square;
+}
+
+/* animation things */
+#hours-open {
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0%   {background-color: hotpink;}
+    50%  {background-color: lawngreen;}
+    100% {background-color: hotpink;}
+}
